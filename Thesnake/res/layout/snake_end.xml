@@ -1,0 +1,204 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Frameend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/haikei"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".SnakeMain" >
+
+    <LinearLayout
+        android:id="@+id/endadll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <view
+                android:id="@+id/endasuta1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                class="jp.maru.mrd.IconCell" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" >
+
+                <view
+                    android:id="@+id/endasuta2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    class="jp.maru.mrd.IconCell" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <view
+            android:id="@+id/endnend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            NendApiKey="1999bcf49a545b6964ea75b34b8f0b0f6c1da668"
+            NendSpotId="86569"
+            class="net.nend.android.NendAdView" />
+
+        <view
+            android:id="@+id/endad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            class="mediba.ad.sdk.android.openx.MasAdView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rankinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/ranking"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/endbuttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/endback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/retrurn" />
+
+            <Button
+                android:id="@+id/enadrankB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@xml/custom"
+                android:text="@string/worldrankingbutton" />
+
+            <Button
+                android:id="@+id/endanother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@xml/custom"
+                android:text="@string/anothergame" />
+
+            <Button
+                android:id="@+id/retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@xml/custom"
+                android:text="@string/retry" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageFL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/haikei"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/rankscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/rankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kekka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagebagu"
+            android:src="@drawable/hage" />
+
+        <TextView
+            android:id="@+id/rankcoment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

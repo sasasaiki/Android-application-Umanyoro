@@ -1,0 +1,157 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".SnakeMain" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/haikei" >
+
+        <LinearLayout
+            android:id="@+id/startadtop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/lucytan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner2"
+                android:text="" />
+
+            <view
+                android:id="@+id/startad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                class="mediba.ad.sdk.android.openx.MasAdView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/startadbotton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <view
+                        android:id="@+id/startasuta1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        class="jp.maru.mrd.IconCell" />
+
+                    <view
+                        android:id="@+id/startasuta2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        class="jp.maru.mrd.IconCell" />
+
+                    <view
+                        android:id="@+id/startasuta3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        class="jp.maru.mrd.IconCell" />
+
+                    <view
+                        android:id="@+id/startasuta4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        class="jp.maru.mrd.IconCell" />
+
+                </LinearLayout>
+
+                <net.nend.android.NendAdView
+                    android:id="@+id/nendstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    NendApiKey="80a3c3cff304ce6d7982ba50d7ec6f2a3886893e"
+                    NendSpotId="86570" >
+                </net.nend.android.NendAdView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/manual" />
+
+            <Button
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/easy" />
+
+            <Button
+                android:id="@+id/standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/standard" />
+
+            <Button
+                android:id="@+id/tecnikal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/hard" />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/book" />
+
+            <Button
+                android:id="@+id/ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@xml/custom"
+                android:text="@string/anothergame" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/themeimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imagebagu"
+        android:src="@drawable/saisyo"
+        android:visibility="visible" />
+
+</merge>

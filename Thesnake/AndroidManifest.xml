@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.saiki.newsnake"
+    android:versionCode="7"
+    android:versionName="1.1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconsnake"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="jp.saiki.newsnake.SnakeStart"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SnakeEnd" >
+        </activity>
+        <activity android:name="SnakeMain" >
+        </activity>
+        <activity android:name="SnakeBook" >
+        </activity>
+        <activity android:name="Explain" >
+        </activity>
+
+        <!-- ad -->
+        <activity android:name="mediba.ad.sdk.android.openx.MasAdClickWebview" />
+		<activity android:name="mediba.ad.sdk.android.openx.MasVideoView" />
+		<!-- ad -->
+
+        <!-- Ranking START -->
+        <meta-data
+            android:name="gamefeat_ranking_api_key"
+            android:value="8d990c8d26274c48c16c42a9500de4400bda7064d83d552ecb67f05fb27da08a" />
+
+        <activity
+            android:name="jp.basicinc.gamefeat.ranking.android.sdk.activity.GFRankingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Ranking" >
+        </activity>
+        <!-- Ranking END -->
+
+
+        <!-- GameFeat START -->
+        <meta-data
+            android:name="gamefeat_site_id"
+            android:value="2061" />
+
+        <activity
+            android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="GameFeat" >
+        </activity>
+        <activity
+            android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppChildActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="GameFeat"
+            android:screenOrientation="sensor" >
+        </activity>
+
+
+        <activity
+            android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatPopupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="GameFeat"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <receiver
+            android:name="jp.basicinc.gamefeat.android.sdk.receiver.GameFeatBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- GameFeat END -->
+
+    </application>
+
+</manifest>

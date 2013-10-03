@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">うまにょろ！</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="standard">すたんだーど</string>
+    <string name="easy">いーじー</string>
+    <string name="hard">はーど</string>
+    <string name="book">ずかん</string>
+    <string name="anothergame">ほかのゲーム</string>
+    <string name="gamescore">1 頭</string>
+    <string name="add">足すよん(デバグ用)</string>
+    <string name="imagebagu">図鑑画像表示ミス、開発者に報告お願いします</string>
+    <string name="temp">なんか</string>
+    <string name="next">次へ</string>
+    <string name="prev">前へ</string>
+    <string name="worldranking">します！</string>
+    <string name="worldrankingno">しません</string>
+    <string name="ranking">端末内ランキング！！</string>
+    <string name="retrurn">スタート画面へ</string>
+    <string name="retry">もういっかい</string>
+    <string name="worldrankingbutton">世界ランキングへ</string>
+    <string name="manual">あそびかた</string>
+    <string name="dialogmessage">おめでとうございます！！\n世界ランキングに登録しますか？\nしますよね？\nしてください！！（土下座）</string>
+    <string name="run">走る馬に設定する</string>
+    <string name="teisi">停止</string>
+    <string name="gameover">ぶつかった！！</string>
+
+
+
+
+</resources>
